@@ -8,9 +8,14 @@ export default function PageTemplate(props) {
 	return (
 		<>
 			<div className="page-wrapper">
-				<NavbarTop />
+				<NavbarTop
+					first={props.first}
+					second={props.second}
+					third={props.third}
+					fourth={props.fourth}
+				/>
 				<div className="main-wrapper">
-					<NavbarSide />
+					<NavbarSide selected={props.selected} />
 					<ContentContainer />
 					<BackgroundText text={props.text} />
 				</div>
