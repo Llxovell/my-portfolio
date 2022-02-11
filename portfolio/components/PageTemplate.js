@@ -7,13 +7,15 @@ import BackgroundText from "../components/BackgroundText";
 export default function PageTemplate(props) {
 	return (
 		<>
-			<BackgroundText text={props.text} />
-			<NavbarTop />
-			<div className="main-wrapper">
-				<NavbarSide />
-				<ContentContainer />
+			<div className="page-wrapper">
+				<NavbarTop />
+				<div className="main-wrapper">
+					<NavbarSide />
+					<ContentContainer />
+					<BackgroundText text={props.text} />
+				</div>
+				<Footer />
 			</div>
-			<Footer />
 		</>
 	);
 }
