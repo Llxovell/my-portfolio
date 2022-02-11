@@ -16,7 +16,7 @@ export default function PageTemplate(props) {
 				/>
 				<div className="main-wrapper">
 					<NavbarSide selected={props.selected} />
-					<ContentContainer />
+					<ContentContainer content={props.content} />
 					<BackgroundText text={props.text} />
 				</div>
 				<Footer />

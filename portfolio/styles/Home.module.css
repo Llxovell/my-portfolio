@@ -1,1 +1,33 @@
+.home_container {
+	display: grid;
+	grid-template-rows: 53px 176px 160px auto 53px;
+	grid-template-columns: 40px auto 40px;
+	height: 606px;
+	align-items: start;
+}
+.home_container > * {
+	grid-column-start: 2;
+}
 
+.title {
+	font-family: var(--font-family-secondary);
+	font-size: var(--font-size-195);
+	margin: 0;
+}
+.title > span {
+	color: var(--color-hotpink);
+}
+.subtitle {
+	font-family: var(--font-family-secondary);
+	font-size: var(--font-size-96);
+	margin: 0;
+	grid-row-start: 3;
+}
+.paragraph_text {
+	font-size: var(--font-size-36);
+}
+.paragraph_container {
+	padding-left: 20px;
+	padding-right: 20px;
+	grid-row-start: 4;
+}
