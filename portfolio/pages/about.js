@@ -1,9 +1,9 @@
 import PageTemplate from "../components/PageTemplate";
 
-export default function Home() {
+export default function About() {
 	return (
 		<>
-			<PageTemplate />
+			<PageTemplate text="</About>" />
 		</>
 	);
 }

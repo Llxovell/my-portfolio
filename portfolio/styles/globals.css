@@ -1,16 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Antonio&display=swap");
+
+:root {
+	--color-white-primary: rgba(248, 247, 249, 1);
+	--color-rasin: rgba(29, 32, 41, 1);
+	--color-hotpink: rgba(213, 86, 114, 1);
+	--color-black: rgba(25, 25, 26, 1);
+	--color-paleviolet: rgba(106, 102, 163, 1);
+
+	--font-family-primary: "Antonio", sans-serif;
+	--font-family-secondary: "Anton", sans-serif;
+
+	--font-size-200: 200px;
+	--font-size-96: 96px;
+	--font-size-36: 36px;
+	--font-size-24: 24px;
+}
+
 html,
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+	padding: 0;
+	margin: 0;
+	font-family: var(--font-family-primary);
+	color: var(--color-white-primary);
+
+	font-size: var(--font-size-24);
+}
+html {
+	background-color: var(--color-rasin);
+}
+body {
+	position: relative;
+	margin-left: 83px;
+	margin-right: 83px;
+	margin-top: 39px;
+	overflow-x: hidden;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+	color: inherit;
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
 }
 
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*Background Text*/
+.background-text {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	font-family: var(--font-family-secondary);
+	font-size: 478px;
+	top: 340px;
+	color: rgba(255, 255, 255, 0.08);
+	z-index: -1;
+	width: 100%;
+}
+
+/*Navbar-Top*/
+.navbar-top {
+	position: relative;
+	display: grid;
+	height: 176px;
+	width: 100%;
+	background-color: inherit;
+	font-family: var(--font-family-secondary);
+	grid-template-columns: auto auto 260px;
+	grid-template-rows: 72px auto;
+}
+
+.logo {
+	cursor: pointer;
+	font-size: 48px;
+}
+.logo > :nth-child(2) {
+	color: var(--color-hotpink);
+}
+
+.menu-horizontal {
+	display: flex;
+	height: 7px;
+	grid-column-start: 3;
+	align-self: center;
+}
+
+/*Main Wrapper*/
+.main-wrapper {
+	display: grid;
+	grid-template-columns: auto auto;
+}
+
+/*Navbar-Side*/
+.navbar-side {
+	display: flex;
+	height: 502px;
+	width: 200px;
+	flex-direction: column;
+	justify-content: center;
+	text-align: left;
+	align-items: start;
+}
+.nav-item {
+	cursor: pointer;
+}
+.nav-link {
+	font-size: var(--font-size-36);
+	font-family: var(--font-family-secondary);
+}
+
+/*Content Container*/
+.content-container {
+	display: flex;
+	width: 1014px;
+	height: 798px;
+}
+.default-container {
+	width: 1014px;
+	height: 606px;
+	background: rgba(255, 255, 255, 0.08);
+	box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(35px);
+	border-radius: 10px;
+}
+
+/*Footer*/
+.copyright {
+	width: 100%;
+	font-size: 16px;
+	margin-bottom: 31px;
+	display: flex;
+	justify-content: center;
 }
