@@ -22,7 +22,6 @@ body {
 	font-family: var(--font-family-primary);
 	color: var(--color-white-primary);
 	font-size: var(--font-size-24);
-	overflow-x: hidden;
 }
 html {
 	margin: 0;
@@ -36,6 +35,7 @@ body {
 	margin: 0;
 	margin-top: 39px;
 	position: relative;
+	overflow-x: hidden;
 }
 
 a {
@@ -156,7 +156,6 @@ ul {
 }
 .default-container {
 	width: 1014px;
-	height: 606px;
 	background: rgba(255, 255, 255, 0.08);
 	box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.1);
 	border-radius: 10px;
