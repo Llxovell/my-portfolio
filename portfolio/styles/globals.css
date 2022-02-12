@@ -22,6 +22,7 @@ body {
 	font-family: var(--font-family-primary);
 	color: var(--color-white-primary);
 	font-size: var(--font-size-24);
+	-webkit-font-smoothing: antialiased;
 }
 html {
 	margin: 0;
