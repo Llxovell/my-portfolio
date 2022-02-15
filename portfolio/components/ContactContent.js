@@ -6,11 +6,20 @@ export default function ProjectsContent() {
 		return (
 			<>
 				<h2 className={contact_style.input_caption}>{props.caption}</h2>
-				<input
-					type="text"
-					className={`default-text-container ${contact_style.contact_input}`}
-					placeholder={props.placeholder}
-				/>
+				{props.textarea ? (
+					<textarea
+						className={`default-text-container ${contact_style.contact_input}`}
+						placeholder={props.placeholder}
+						cols="40"
+						rows="5"
+					></textarea>
+				) : (
+					<input
+						type="text"
+						className={`default-text-container ${contact_style.contact_input}`}
+						placeholder={props.placeholder}
+					/>
+				)}
 			</>
 		);
 	}
@@ -33,7 +42,11 @@ export default function ProjectsContent() {
 				<ContactInput caption="Name" placeholder="Full name" />
 				<ContactInput caption="Email" placeholder="Email address" />
 				<ContactInput caption="Subject" placeholder="Email subject" />
-				<ContactInput caption="Message" placeholder="Your message here" />
+				<ContactInput
+					caption="Message"
+					placeholder="Your message here..."
+					textarea
+				/>
 				<input type="submit" className={contact_style.submit} value="SEND" />
 			</form>
 		</div>
