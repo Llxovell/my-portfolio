@@ -3,13 +3,15 @@
 	grid-template-rows: auto auto auto;
 	align-items: start;
 	animation: enter 0.5s ease-in;
-	padding: 40px 40px 20px 40px;
+	padding: 40px;
+	row-gap: 30px;
 }
 .home_container > * {
 	grid-column-start: 2;
 }
 .title,
-.subtitle {
+.subtitle,
+.title > span {
 	margin: 0;
 }
 .title {
@@ -19,6 +21,7 @@
 }
 .title > span {
 	color: var(--color-hotpink);
+	height: 100%;
 }
 .subtitle {
 	font-family: var(--font-family-secondary);
@@ -41,5 +44,35 @@
 	100% {
 		transform: translateY(0px);
 		opacity: 1;
+	}
+}
+
+@media only screen and (max-width: 1320px) {
+	.home_container {
+		text-align: center;
+	}
+	.home_container > * {
+		grid-column-start: 1;
+	}
+	/*
+	.title {
+		font-size: var(--font-size-96);
+	}
+	.subtitle {
+		font-size: var(--font-size-36);
+	}
+	.paragraph_text {
+		font-size: var(--font-size-24);
+	}*/
+}
+@media only screen and (max-width: 560px) {
+	.title {
+		font-size: var(--font-size-96);
+	}
+	.subtitle {
+		font-size: var(--font-size-36);
+	}
+	.paragraph_text {
+		font-size: var(--font-size-24);
 	}
 }
