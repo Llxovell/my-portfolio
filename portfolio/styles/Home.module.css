@@ -2,7 +2,6 @@
 	display: grid;
 	grid-template-rows: auto auto auto;
 	align-items: start;
-	animation: enter 0.5s ease-in;
 	padding: 40px;
 	row-gap: 30px;
 }
@@ -35,7 +34,7 @@
 	padding-left: 20px;
 	padding-right: 20px;
 }
-
+/*
 @keyframes enter {
 	0% {
 		transform: translateY(500px);
@@ -45,7 +44,7 @@
 		transform: translateY(0px);
 		opacity: 1;
 	}
-}
+}*/
 
 @media only screen and (max-width: 1320px) {
 	.home_container {

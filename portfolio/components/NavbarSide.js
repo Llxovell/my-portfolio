@@ -24,7 +24,9 @@ export default function NavbarSide(props) {
 				</li>
 				<li
 					className={`nav-item ${
-						props.selected == "projects" ? "selected-color" : "unselected-color"
+						props.selected == "projects"
+							? "selected-color-alt"
+							: "unselected-color"
 					}`}
 				>
 					<Link href="/projects">

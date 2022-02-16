@@ -77,7 +77,11 @@
 .contact_input::placeholder {
 	color: var(--color-white-primary);
 }
+.contact_input:hover::placeholder {
+	color: var(--color-hotpink);
+}
 .email_link {
+	cursor: pointer;
 	font-size: var(--font-size-36);
 	display: grid;
 	grid-template-columns: auto auto;
@@ -91,6 +95,7 @@
 	margin: 0;
 }
 .submit {
+	cursor: pointer;
 	font-family: var(--font-family-secondary);
 	font-size: var(--font-size-36);
 	background-color: rgba(213, 86, 114, 0.75);
