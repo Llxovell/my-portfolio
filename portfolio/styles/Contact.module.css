@@ -14,6 +14,7 @@
 }
 .title > span {
 	color: var(--color-hotpink);
+	line-height: 1;
 }
 
 .input_form {
@@ -74,6 +75,9 @@
 	width: 100%;
 	padding-left: 20px;
 }
+.contact_input:focus {
+	outline: 2px solid var(--color-white-primary);
+}
 .contact_input::placeholder {
 	color: var(--color-white-primary);
 }
@@ -104,11 +108,17 @@
 	box-shadow: 5px 4px 10px 10px rgba(29, 32, 41, 0.15);
 	border-radius: 8px;
 }
+.submit:focus {
+	outline: 2px solid var(--color-white-primary);
+}
 
 @media only screen and (max-width: 1320px) {
 	.contact_container,
 	.input_form {
 		grid-template-columns: 1fr;
+	}
+	.contact_container {
+		grid-template-rows: auto;
 	}
 	.title {
 		text-align: center;

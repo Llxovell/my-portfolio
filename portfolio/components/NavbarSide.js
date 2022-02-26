@@ -1,11 +1,15 @@
 import Link from "next/link";
 
 export default function NavbarSide(props) {
+	function checkProjectsSelected() {
+		return props.selected == "projects" ? "nav-item-alt" : null;
+	}
+
 	return (
-		<nav className="navbar-side">
+		<nav className={props.handleClick ? "navbar-modal" : "navbar-side"}>
 			<ul className="navbar">
 				<li
-					className={`nav-item ${
+					className={`nav-item ${checkProjectsSelected()} ${
 						props.selected == "home" ? "selected-color" : "unselected-color"
 					}`}
 				>
@@ -14,7 +18,7 @@ export default function NavbarSide(props) {
 					</Link>
 				</li>
 				<li
-					className={`nav-item ${
+					className={`nav-item ${checkProjectsSelected()} ${
 						props.selected == "about" ? "selected-color" : "unselected-color"
 					}`}
 				>
@@ -25,7 +29,7 @@ export default function NavbarSide(props) {
 				<li
 					className={`nav-item ${
 						props.selected == "projects"
-							? "selected-color-alt"
+							? "selected-color-alt nav-item-alt"
 							: "unselected-color"
 					}`}
 				>
@@ -34,7 +38,7 @@ export default function NavbarSide(props) {
 					</Link>
 				</li>
 				<li
-					className={`nav-item ${
+					className={`nav-item ${checkProjectsSelected()} ${
 						props.selected == "contact" ? "selected-color" : "unselected-color"
 					}`}
 				>
