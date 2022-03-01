@@ -57,6 +57,9 @@
 	justify-content: center;
 	gap: 20px;
 }
+.email_link:hover {
+	color: var(--color-hotpink);
+}
 .icon_container,
 .email_link {
 	min-height: 119px;

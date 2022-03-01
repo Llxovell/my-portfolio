@@ -3,6 +3,7 @@ import Image from "next/image";
 import GithubSVG from "./GithubSVG";
 import LinkedinSVG from "./LinkedinSVG";
 import CopySVG from "./CopySVG";
+import { useState, useEffect } from "react";
 
 export default function AboutContent() {
 	return (
@@ -33,8 +34,12 @@ export default function AboutContent() {
 				<Image src="https://unsplash.it/236/329" width="236px" height="329px" />
 			</div>
 			<div className={`default-text-container ${about_style.icon_container}`}>
-				<GithubSVG />
-				<LinkedinSVG />
+				<div>
+					<GithubSVG />
+				</div>
+				<div>
+					<LinkedinSVG />
+				</div>
 			</div>
 			<div className={`default-text-container ${about_style.email_link}`}>
 				<p>levellmack@gmail.com</p>

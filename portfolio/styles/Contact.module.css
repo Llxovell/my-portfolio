@@ -81,7 +81,8 @@
 .contact_input::placeholder {
 	color: var(--color-white-primary);
 }
-.contact_input:hover::placeholder {
+.contact_input:hover::placeholder,
+.contact_input:focus::placeholder {
 	color: var(--color-hotpink);
 }
 .email_link {
@@ -94,6 +95,9 @@
 	gap: 20px;
 	grid-column: 2/4;
 	min-height: 110px;
+}
+.email_link:hover {
+	color: var(--color-hotpink);
 }
 .email_link > p {
 	margin: 0;
@@ -108,7 +112,8 @@
 	box-shadow: 5px 4px 10px 10px rgba(29, 32, 41, 0.15);
 	border-radius: 8px;
 }
-.submit:focus {
+.submit:focus,
+.submit:hover {
 	outline: 2px solid var(--color-white-primary);
 }
 
