@@ -16,7 +16,6 @@
 	grid-column: 1/4;
 }
 .subtitle {
-	font-family: var(--font-family-secondary);
 	font-size: var(--font-size-36);
 	grid-column: 1/4;
 	grid-row: 2/3;
@@ -59,6 +58,7 @@
 }
 .email_link:hover {
 	color: var(--color-hotpink);
+	transition: 0.2s;
 }
 .icon_container,
 .email_link {
