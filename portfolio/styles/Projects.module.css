@@ -27,18 +27,31 @@
 	display: grid;
 	grid-column: 3/4;
 	grid-row: 1/4;
-	max-width: 100px;
+	width: 100px;
 	background: rgba(106, 102, 163, 0.5);
 	border: none;
 	box-shadow: 5px 4px 10px 10px rgba(29, 32, 41, 0.15);
 	border-radius: 8px;
 }
+.button:hover {
+	outline: 2px solid var(--color-white-primary);
+}
 .button > * {
 	place-self: center;
+}
+.image_container > *:hover {
+	box-shadow: 0 0 0 2px var(--color-white-primary);
+	border-radius: 15px;
 }
 .image_container {
 	cursor: pointer;
 	display: grid;
 	place-self: center;
 	padding: 20px;
+}
+
+@media only screen and (max-width: 500px) {
+	.image_container {
+		grid-column: span 2;
+	}
 }

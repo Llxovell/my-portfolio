@@ -84,6 +84,7 @@
 .contact_input:hover::placeholder,
 .contact_input:focus::placeholder {
 	color: var(--color-hotpink);
+	transition: 0.2s;
 }
 .email_link {
 	cursor: pointer;
@@ -98,6 +99,7 @@
 }
 .email_link:hover {
 	color: var(--color-hotpink);
+	transition: 0.2s;
 }
 .email_link > p {
 	margin: 0;

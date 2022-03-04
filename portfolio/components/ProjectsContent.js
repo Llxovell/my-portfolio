@@ -4,12 +4,16 @@ import Image from "next/image";
 import todo_list_PNG from "../assets/todo_list.png";
 
 export default function ProjectsContent(props) {
+	function handleClick() {
+		if (props.count < 2) props.setCount(props.count + 1);
+		if (props.count == 2) props.setCount(0);
+	}
 	return (
 		<div className={`default-container ${projects_style.projects_container}`}>
 			<h1 className={projects_style.title}>
 				{props.title ? (
 					<>
-						props.title{" "}
+						{props.title}{" "}
 						<span className={projects_style.title_highlight}>
 							{props.title_highlight}
 						</span>
@@ -26,7 +30,7 @@ export default function ProjectsContent(props) {
 					? props.subtitle
 					: "A simple todolist where you can add and remove items, with a drag and drop feature."}
 			</h2>
-			<button className={projects_style.button}>
+			<button className={projects_style.button} onClick={handleClick}>
 				<ArrowSVG />
 			</button>
 			<div
