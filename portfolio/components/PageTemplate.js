@@ -13,21 +13,11 @@ export default function PageTemplate(props) {
 		<>
 			<Modal handleClick={handleClick} />
 			<div className="page-wrapper">
-				<NavbarTop
-					first={props.first}
-					second={props.second}
-					third={props.third}
-					fourth={props.fourth}
-					sethandleClick={sethandleClick}
-					handleClick={handleClick}
-					logoColor={props.logoColor}
-				/>
 				<div className="main-wrapper">
-					<NavbarSide selected={props.selected} handleClick={handleClick} />
+					{props.navbar ? props.navbar : <div></div>}
 					<ContentContainer content={props.content} />
 					<BackgroundText text={props.text} />
 				</div>
-				<Footer />
 			</div>
 		</>
 	);

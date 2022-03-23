@@ -7,7 +7,10 @@ import { useState, useEffect } from "react";
 
 export default function AboutContent() {
 	return (
-		<div className={`default-container ${about_style.about_container}`}>
+		<div
+			id="about"
+			className={`default-container ${about_style.about_container}`}
+		>
 			<h1 className={about_style.title}>
 				Get to know <span>me</span>
 			</h1>

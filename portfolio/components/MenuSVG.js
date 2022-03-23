@@ -1,8 +1,8 @@
 export default function MenuSVG(props) {
 	return (
 		<svg
-			width="56"
-			height="42"
+			width="30"
+			height="23"
 			viewBox="0 0 56 42"
 			fill="none"
 			xmlns="http://www.w3.org/2000/svg"

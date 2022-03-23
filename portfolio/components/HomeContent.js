@@ -1,7 +1,7 @@
 import home_style from "../styles/Home.module.css";
 export default function HomeContent() {
 	return (
-		<div className={`default-container ${home_style.home_container}`}>
+		<div id="home" className={`default-container ${home_style.home_container}`}>
 			<h1 className={home_style.title}>
 				Levell <span>Mack</span>
 			</h1>

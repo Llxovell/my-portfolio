@@ -1,7 +1,7 @@
 .contact_container {
 	display: grid;
 	grid-template-columns: auto 470px;
-	grid-template-rows: 110px auto;
+	grid-template-rows: 96px auto;
 	padding: 40px 20px 40px 20px;
 	gap: 20px;
 }
@@ -95,7 +95,7 @@
 	justify-content: center;
 	gap: 20px;
 	grid-column: 2/4;
-	min-height: 110px;
+	min-height: 96px;
 }
 .email_link:hover {
 	color: var(--color-hotpink);

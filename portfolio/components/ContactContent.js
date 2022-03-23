@@ -1,7 +1,7 @@
 import contact_style from "../styles/Contact.module.css";
 import CopySVG from "./CopySVG";
 
-export default function ProjectsContent() {
+export default function ContactContent() {
 	function ContactInput(props) {
 		return (
 			<>
@@ -25,7 +25,10 @@ export default function ProjectsContent() {
 	}
 
 	return (
-		<div className={`default-container ${contact_style.contact_container}`}>
+		<div
+			id="contact"
+			className={`default-container ${contact_style.contact_container}`}
+		>
 			<h1 className={contact_style.title}>
 				Get in <span>touch</span>
 			</h1>

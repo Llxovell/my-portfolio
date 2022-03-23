@@ -9,7 +9,10 @@ export default function ProjectsContent(props) {
 		if (props.count == 2) props.setCount(0);
 	}
 	return (
-		<div className={`default-container ${projects_style.projects_container}`}>
+		<div
+			id="projects"
+			className={`default-container ${projects_style.projects_container}`}
+		>
 			<h1 className={projects_style.title}>
 				{props.title ? (
 					<>
