@@ -42,8 +42,8 @@ export default function ProjectsContent(props) {
 				<Image
 					className={projects_style.img}
 					src={props.img_src ? props.img_src : todo_list_PNG}
-					height="125px"
-					width="125px"
+					height="150px"
+					width="150px"
 				/>
 			</div>
 		</div>

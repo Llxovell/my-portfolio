@@ -4,7 +4,7 @@ import ContactContent from "../components/ContactContent";
 import ProjectsContent from "../components/ProjectsContent";
 import NavbarTop from "../components/NavbarTop";
 import BackgrounText from "../components/BackgroundText";
-import { useState } from "react/cjs/react.production.min";
+import Footer from "../components/Footer";
 
 export default function New() {
 	const projects = [
@@ -39,6 +39,7 @@ export default function New() {
 				subtitle="A web app containing information about a space tourism experience."
 			/>
 			<ContactContent />
+			<Footer />
 		</>
 	);
 }

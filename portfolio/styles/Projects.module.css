@@ -2,7 +2,15 @@
 	display: grid;
 	grid-template-columns: repeat(2, auto);
 	column-gap: 30px;
-	padding: 60px 86px 60px 86px;
+	row-gap: 20px;
+	padding: 50px 86px 50px 86px;
+	cursor: pointer;
+	transition: background-color 0.4s ease;
+}
+.projects_container:hover {
+	background-color: var(--color-black);
+	border-radius: 8px;
+	box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.1);
 }
 .title {
 	font-size: var(--font-size-96);
@@ -12,6 +20,10 @@
 .subtitle {
 	font-size: var(--font-size-36);
 	grid-row: 2/3;
+	background-color: var(--color-paleviolet);
+	border-radius: 8px;
+	padding: 20px;
+	margin-top: 10px;
 }
 .title,
 .subtitle {
@@ -34,7 +46,7 @@
 	width: 100px;
 	background: rgba(106, 102, 163, 0.5);
 	border: none;
-	box-shadow: 5px 4px 10px 10px rgba(29, 32, 41, 0.15);
+	box-shadow: 5px 4px 10px 10px rgba(29, 32, 41, 0.08);
 	border-radius: 8px;
 	justify-self: end;
 }
@@ -44,10 +56,11 @@
 .button > * {
 	place-self: center;
 }
+/*
 .image_container:hover {
 	box-shadow: 0 0 0 2px var(--color-white-primary);
 	border-radius: 8px;
-}
+}*/
 .image_container {
 	cursor: pointer;
 	display: grid;

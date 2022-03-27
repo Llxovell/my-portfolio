@@ -1,7 +1,13 @@
 import contact_style from "../styles/Contact.module.css";
 import CopySVG from "./CopySVG";
+import { useState } from "react";
 
 export default function ContactContent() {
+	const [stroke, setStroke] = useState(false);
+
+	function handleMouseHover(isHovered) {
+		setStroke(isHovered);
+	}
 	function ContactInput(props) {
 		return (
 			<>
@@ -32,9 +38,17 @@ export default function ContactContent() {
 			<h1 className={contact_style.title}>
 				Get in <span>touch</span>
 			</h1>
-			<div className={`default-text-container ${contact_style.email_link}`}>
+			<div
+				className={`default-text-container ${contact_style.email_link}`}
+				onMouseEnter={() => {
+					handleMouseHover(true);
+				}}
+				onMouseLeave={() => {
+					handleMouseHover(false);
+				}}
+			>
 				<p>levellmack@gmail.com</p>
-				<CopySVG />
+				<CopySVG stroke={stroke} />
 			</div>
 			<form
 				className={contact_style.input_form}

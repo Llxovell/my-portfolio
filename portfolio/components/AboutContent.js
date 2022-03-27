@@ -6,6 +6,11 @@ import CopySVG from "./CopySVG";
 import { useState, useEffect } from "react";
 
 export default function AboutContent() {
+	const [stroke, setStroke] = useState(false);
+
+	function handleMouseHover(isHovered) {
+		setStroke(isHovered);
+	}
 	return (
 		<div
 			id="about"
@@ -39,9 +44,15 @@ export default function AboutContent() {
 			</div>
 			<div
 				className={`default-text-container bg-black ${about_style.email_link}`}
+				onMouseEnter={() => {
+					handleMouseHover(true);
+				}}
+				onMouseLeave={() => {
+					handleMouseHover(false);
+				}}
 			>
 				<p>levellmack@gmail.com</p>
-				<CopySVG />
+				<CopySVG stroke={stroke} />
 			</div>
 			<div
 				className={`default-text-container bg-black ${about_style.icon_container}`}

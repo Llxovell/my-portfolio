@@ -2,6 +2,7 @@
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	padding: 40px 86px 40px 86px;
+	margin-top: 100px;
 	gap: 20px;
 	background-color: var(--color-paleviolet);
 	align-items: center;
@@ -24,7 +25,7 @@
 	width: 100%;
 	min-height: 530px;
 	column-gap: 20px;
-	grid-column: span 3;
+	grid-column: span 2;
 }
 /*
 .input_form > :nth-child(2n) {
@@ -64,7 +65,7 @@
 }*/
 .input_caption {
 	margin: 0;
-	margin-top: 20px;
+	margin-top: 10px;
 	padding-bottom: 10px;
 	align-self: end;
 }
@@ -97,13 +98,13 @@
 	align-items: center;
 	justify-content: center;
 	gap: 20px;
-	grid-column: 2/4;
+	grid-column: 2/3;
 	min-height: 96px;
 	background-color: var(--color-black);
 }
 .email_link:hover {
 	color: var(--color-paleviolet);
-	transition: 0.2s;
+	/*transition: 0.2s;*/
 }
 .email_link > p {
 	margin: 0;
@@ -120,10 +121,12 @@
 	padding: 10px;
 	margin-top: 40px;
 	grid-column: 2/3;
+	transition: color 0.2s ease;
 }
 .submit:focus,
 .submit:hover {
-	outline: 2px solid var(--color-white-primary);
+	outline: 2px solid var(--color-paleviolet);
+	color: var(--color-paleviolet);
 }
 
 @media only screen and (max-width: 1320px) {
@@ -140,6 +143,7 @@
 	.email_link {
 		font-size: var(--font-size-24);
 	}
+	/*
 	.email_link,
 	.input_form,
 	.input_form > :nth-child(2),
@@ -178,5 +182,5 @@
 	}
 	.input_form > :nth-child(9) {
 		grid-row: 9/10;
-	}
+	}*/
 }
