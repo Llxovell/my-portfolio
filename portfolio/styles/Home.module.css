@@ -2,7 +2,7 @@
 	display: grid;
 	grid-template-rows: auto auto auto;
 	align-items: start;
-	padding: 72px 86px 72px 86px;
+	padding: 180px 86px 180px 86px;
 	margin-top: 69px;
 	row-gap: 30px;
 }

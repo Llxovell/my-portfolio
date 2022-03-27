@@ -33,17 +33,17 @@ export default function ProjectsContent(props) {
 					? props.subtitle
 					: "A simple todolist where you can add and remove items, with a drag and drop feature."}
 			</h2>
+			{/*
 			<button className={projects_style.button} onClick={handleClick}>
 				<ArrowSVG />
 			</button>
-			<div
-				className={`default-text-container ${projects_style.image_container}`}
-			>
+			*/}
+			<div className={` ${projects_style.image_container}`}>
 				<Image
 					className={projects_style.img}
 					src={props.img_src ? props.img_src : todo_list_PNG}
-					height="300px"
-					width="300px"
+					height="125px"
+					width="125px"
 				/>
 			</div>
 		</div>

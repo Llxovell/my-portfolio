@@ -64,7 +64,21 @@ export default function Home(props) {
 				third="#6A66A3"
 				text="</Projects>"
 				selected="projects"
-				content={projects[count]}
+				content={projects[0]}
+				logoColor
+			/>
+			<PageTemplate
+				third="#6A66A3"
+				text="</Projects>"
+				selected="projects"
+				content={projects[1]}
+				logoColor
+			/>
+			<PageTemplate
+				third="#6A66A3"
+				text="</Projects>"
+				selected="projects"
+				content={projects[2]}
 				logoColor
 			/>
 			<PageTemplate

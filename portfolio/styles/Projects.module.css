@@ -1,17 +1,21 @@
 .projects_container {
 	display: grid;
-	grid-template-columns: repeat(3, auto);
-	gap: 30px;
-	padding: 20px;
+	grid-template-columns: repeat(2, auto);
+	column-gap: 30px;
+	padding: 60px 86px 60px 86px;
 }
 .title {
 	font-size: var(--font-size-96);
 	font-family: var(--font-family-secondary);
-	grid-column: 1/3;
+	grid-row: 1/2;
 }
 .subtitle {
 	font-size: var(--font-size-36);
-	grid-column: 1/3;
+	grid-row: 2/3;
+}
+.title,
+.subtitle {
+	grid-column: 1/2;
 }
 .title,
 .subtitle,
@@ -40,16 +44,19 @@
 .button > * {
 	place-self: center;
 }
-.image_container > *:hover {
+.image_container:hover {
 	box-shadow: 0 0 0 2px var(--color-white-primary);
-	border-radius: 15px;
+	border-radius: 8px;
 }
 .image_container {
 	cursor: pointer;
 	display: grid;
 	align-self: center;
-	justify-self: start;
-	padding: 20px;
+	justify-self: end;
+	padding: 10px;
+	grid-row: 1/3;
+	background-color: var(--color-paleviolet);
+	border-radius: 8px;
 }
 
 @media only screen and (max-width: 500px) {

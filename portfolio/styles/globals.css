@@ -73,7 +73,6 @@ textarea {
 .page-wrapper {
 	display: grid;
 	max-width: 1350px;
-	padding-top: 150px;
 }
 
 /*Background Text*/
@@ -155,7 +154,7 @@ textarea {
 .navbar-side {
 	display: flex;
 	position: fixed;
-	height: 606px;
+	height: 100%;
 	width: 200px;
 	flex-direction: column;
 	justify-content: center;
@@ -224,8 +223,7 @@ textarea {
 .copyright {
 	width: 100%;
 	font-size: 16px;
-	margin-top: 40px;
-	margin-bottom: 31px;
+	margin: 60px 0 60px 0;
 	display: flex;
 	justify-content: center;
 	grid-row-end: 4;
