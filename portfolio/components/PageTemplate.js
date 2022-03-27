@@ -16,7 +16,6 @@ export default function PageTemplate(props) {
 				<div className="main-wrapper">
 					{props.navbar ? props.navbar : <div></div>}
 					<ContentContainer content={props.content} />
-					<BackgroundText text={props.text} />
 				</div>
 			</div>
 		</>

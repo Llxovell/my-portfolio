@@ -2,8 +2,8 @@
 	display: grid;
 	grid-template-rows: auto auto auto;
 	align-items: start;
-	padding: 40px;
-	margin-top: 80px;
+	padding: 72px 86px 72px 86px;
+	margin-top: 69px;
 	row-gap: 30px;
 }
 .title,
@@ -17,7 +17,7 @@
 	line-height: 1;
 }
 .title > span {
-	color: var(--color-hotpink);
+	color: var(--color-paleviolet);
 	height: 100%;
 }
 .subtitle {

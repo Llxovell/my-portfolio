@@ -32,6 +32,7 @@
 	border: none;
 	box-shadow: 5px 4px 10px 10px rgba(29, 32, 41, 0.15);
 	border-radius: 8px;
+	justify-self: end;
 }
 .button:hover {
 	outline: 2px solid var(--color-white-primary);
@@ -46,7 +47,8 @@
 .image_container {
 	cursor: pointer;
 	display: grid;
-	place-self: center;
+	align-self: center;
+	justify-self: start;
 	padding: 20px;
 }
 

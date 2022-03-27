@@ -7,6 +7,7 @@ import NavbarTop from "../components/NavbarTop";
 import NavbarSide from "../components/NavbarSide";
 import Footer from "../components/Footer";
 import Modal from "../components/Modal";
+import BackgroundText from "../components/BackgroundText";
 import { useState } from "react";
 
 import home_page_PNG from "../assets/home_page.png";
@@ -46,6 +47,7 @@ export default function Home(props) {
 				handleClick={handleClick}
 				logoColor={props.logoColor}
 			/>
+			<BackgroundText text={props.text} />
 			<PageTemplate
 				navbar={<NavbarSide />}
 				first="#D55672"

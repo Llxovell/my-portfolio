@@ -15,14 +15,18 @@ export default function AboutContent() {
 				Get to know <span>me</span>
 			</h1>
 			<h2 className={about_style.subtitle}>A little piece of me</h2>
-			<div className="default-text-container">
+			<div
+				className={`default-text-container bg-black ${about_style.paragraph_intro}`}
+			>
 				<p className={about_style.paragraph_text}>
 					My name is Levell, I'm a front-end developer currently located in
 					Southern California. I create websites and web based applications
 					primarily in HTML, CSS, Javascript and React.
 				</p>
 			</div>
-			<div className="default-text-container">
+			<div
+				className={`default-text-container bg-black ${about_style.paragraph_container}`}
+			>
 				<p className={about_style.paragraph_text}>
 					I studied computer science at California State University, San
 					Bernardino where I recieved my B.S. in Computer Science in 2021.{" "}
@@ -33,20 +37,21 @@ export default function AboutContent() {
 				</p>
 				<p className={about_style.paragraph_text}>Get in touch with me!</p>
 			</div>
-			<div className={`default-text-container ${about_style.image_container}`}>
-				<Image src="https://unsplash.it/236/329" width="236px" height="329px" />
+			<div
+				className={`default-text-container bg-black ${about_style.email_link}`}
+			>
+				<p>levellmack@gmail.com</p>
+				<CopySVG />
 			</div>
-			<div className={`default-text-container ${about_style.icon_container}`}>
+			<div
+				className={`default-text-container bg-black ${about_style.icon_container}`}
+			>
 				<div>
 					<GithubSVG />
 				</div>
 				<div>
 					<LinkedinSVG />
 				</div>
-			</div>
-			<div className={`default-text-container ${about_style.email_link}`}>
-				<p>levellmack@gmail.com</p>
-				<CopySVG />
 			</div>
 		</div>
 	);

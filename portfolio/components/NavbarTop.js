@@ -11,14 +11,12 @@ export default function NavbarTop(props) {
 	return (
 		<div className="navbar-top">
 			<div className="logo">
-				<Link href="/">
-					<a>
-						<span>L</span>
-						<span className={props.logoColor ? "logo-alt" : "logo-default"}>
-							M
-						</span>
-					</a>
-				</Link>
+				<a href="home">
+					<span>L</span>
+					<span className={props.logoColor ? "logo-alt" : "logo-default"}>
+						M
+					</span>
+				</a>
 			</div>
 			<div
 				className="menu"

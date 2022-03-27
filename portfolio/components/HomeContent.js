@@ -9,7 +9,7 @@ export default function HomeContent() {
 			<h2 className={home_style.subtitle}>Frontend Developer</h2>
 
 			<div
-				className={`default-text-container ${home_style.paragraph_container} `}
+				className={`default-text-container bg-paleviolet ${home_style.paragraph_container} `}
 			>
 				<p className={home_style.paragraph_text}>
 					Watching my code come to life, fuels my passion for frontend
