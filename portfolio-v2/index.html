@@ -1,0 +1,71 @@
+<html lang="en" class="">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Levell Mack</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100;400&family=Elsie+Swash+Caps:wght@400;900&family=Six+Caps&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              fontFamily: {
+                'elise': ['Elsie Swash Caps', 'cursive'],
+                'antonio': ['Antonio', 'sans-serif'],
+                'six-caps': ['Six Caps', 'sans-serif']
+              },
+              letterSpacing: {
+                  'custom': '.01em'
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body class="grid lg:justify-center w-full font-antonio font-light bg-zinc-900 text-white">
+    <!--Page Wrapper-->
+    <div class="grid gap-y-16 w-full lg:w-[900px] relative">
+    <!--Navbar-->
+    <nav class="p-4 pr-0 w-full lg:w-[900px] grid grid-cols-2 items-center backdrop-blur-sm fixed left-0 right-0 mr-auto ml-auto border-b-[1px]">
+        <div class="cursor-pointer text-3xl font-normal leading-[1.5rem]"><div class="w-24 hover:text-sky-500 transition-colors duration-300">levell <span class="text-sky-500">mack</span>.</div></div>
+        <ul class="flex grid-cols-4 justify-self-end text-4xl font-six-caps">
+            <li class=""><a href="#" class="hover:text-sky-500 transition-colors duration-300 px-4 py-2">about</a></li>
+            <li class=""><a href="#" class="hover:text-sky-500 transition-colors duration-300 px-4 py-2">projects</a></li>
+            <li class=""><a href="#" class="hover:text-sky-500 transition-colors duration-300 px-4 py-2">contact</a></li>
+        </ul>
+    </nav>
+    <!--Home-->
+    <div id="home" class="grid w-full items-center p-4 pt-32">
+        <div class="grid">
+            <div class="md:flex grid grid-cols-[auto,1fr] gap-x-2 text-9xl leading-none font-six-caps border-b-[1px]">
+                <h1>Front-End</h1>
+                <div class="text-sky-400 text-7xl font-elise self-end">web</div>
+                <h1>Developer</h1>
+            </div>
+            <h2 class="text-2xl tracking-custom">watching my code come to life fuels my passion for front-end development.</h2>
+        </div>
+        <div class="grid pt-16 md:pt-0 justify-end">
+            <div class="grid grid-cols-[auto,1fr]">
+                <div class="text-9xl font-six-caps border-b-[1px]">I am Levell Mack</div>
+                <div class="text-2xl font-elise text-sky-400">hello!</div>
+                <div class="text-2xl">i am a front-end developer. based in california.</div>
+            </div>
+        </div>
+    </div>
+    <!--About-->
+    <div id="about" class="sm:flex gap-x-4 mt-4 p-4">
+        <p class="text-8xl text-sky-400">konnichiwa!</p>
+        <p class="text-4xl self-end">This is me.</p>
+    </div>
+    <!--Projects-->
+    <div id="projects" class="grid mt-4 p-4 "><h1 class="text-9xl font-six-caps text-sky-500">Projects</h1></div>
+    <!--Contact-->
+    <div id="contact" class="grid mt-4 p-4 "><h1 class="text-9xl font-six-caps text-sky-500">Contact</h1></div>
+    <!--Footer-->
+    <footer class="grid place-content-center mt-4 p-4 ">Copyright © 2022 Levell Mack. All rights reserved.</footer>
+</div>
+</body>
+</html>
