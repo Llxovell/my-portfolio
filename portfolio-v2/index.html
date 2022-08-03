@@ -1,4 +1,4 @@
-<html lang="en" class="">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -27,43 +27,65 @@
 </head>
 <body class="grid lg:justify-center w-full font-antonio font-light bg-zinc-900 text-white">
     <!--Page Wrapper-->
-    <div class="grid gap-y-16 w-full lg:w-[900px] relative">
+    <div class="grid gap-y-16 w-full lg:w-[1000px] relative">
     <!--Navbar-->
-    <nav class="p-4 pr-0 w-full lg:w-[900px] grid grid-cols-2 items-center backdrop-blur-sm fixed left-0 right-0 mr-auto ml-auto border-b-[1px]">
-        <div class="cursor-pointer text-3xl font-normal leading-[1.5rem]"><div class="w-24 hover:text-sky-500 transition-colors duration-300">levell <span class="text-sky-500">mack</span>.</div></div>
-        <ul class="flex grid-cols-4 justify-self-end text-4xl font-six-caps">
-            <li class=""><a href="#" class="hover:text-sky-500 transition-colors duration-300 px-4 py-2">about</a></li>
-            <li class=""><a href="#" class="hover:text-sky-500 transition-colors duration-300 px-4 py-2">projects</a></li>
-            <li class=""><a href="#" class="hover:text-sky-500 transition-colors duration-300 px-4 py-2">contact</a></li>
+    <nav class="p-4 pr-0 w-full lg:w-[1000px] grid grid-cols-2 items-center backdrop-blur-sm fixed left-0 right-0 mr-auto ml-auto border-b-[1px]">
+        <div class="cursor-pointer text-3xl font-normal leading-[1.5rem]">
+            <div class="w-24 hover:text-sky-400 transition-colors duration-300">
+                <a href="#">levell 
+                    <span class="text-sky-400">mack</span>.
+                </a>
+            </div>
+        </div>
+        <ul class="flex grid-cols-4 justify-self-end text-xl sm:text-2xl font-antonio">
+            <li class=""><a href="#about" class="hover:text-sky-400 transition-colors duration-300 sm:px-4 px-2 py-2">about</a></li>
+            <li class=""><a href="#projects" class="hover:text-sky-400 transition-colors duration-300 sm:px-4 px-2 py-2">projects</a></li>
+            <li class=""><a href="#contact" class="hover:text-sky-400 transition-colors duration-300 px-4 py-2">contact</a></li>
         </ul>
     </nav>
     <!--Home-->
-    <div id="home" class="grid w-full items-center p-4 pt-32">
+    <div id="home" class="grid w-full items-center p-4 pt-40">
         <div class="grid">
-            <div class="md:flex grid grid-cols-[auto,1fr] gap-x-2 text-9xl leading-none font-six-caps border-b-[1px]">
+            <div class="md:flex w-fit grid gap-x-2 text-9xl text-sky-400 leading-none font-six-caps ">
                 <h1>Front-End</h1>
-                <div class="text-sky-400 text-7xl font-elise self-end">web</div>
+                <div class="text-white text-7xl font-elise self-end">web</div>
                 <h1>Developer</h1>
             </div>
             <h2 class="text-2xl tracking-custom">watching my code come to life fuels my passion for front-end development.</h2>
         </div>
-        <div class="grid pt-16 md:pt-0 justify-end">
+        <div class="grid pt-16 justify-end">
             <div class="grid grid-cols-[auto,1fr]">
-                <div class="text-9xl font-six-caps border-b-[1px]">I am Levell Mack</div>
+                <div class="sm:flex grid grid-cols-[auto,1fr] text-right justify-self-end gap-x-4 w-fit ">
+                    <div class="text-9xl font-six-caps">I am</div>
+                    <p class="text-9xl font-six-caps text-sky-400 self-end">Levell</p>
+                    <div class="text-9xl font-six-caps col-start-2">Mack</div>
+                </div>
                 <div class="text-2xl font-elise text-sky-400">hello!</div>
-                <div class="text-2xl">i am a front-end developer. based in california.</div>
+                <div class="text-2xl text-right">i am a front-end developer. based in california.</div>
             </div>
         </div>
     </div>
     <!--About-->
     <div id="about" class="sm:flex gap-x-4 mt-4 p-4">
-        <p class="text-8xl text-sky-400">konnichiwa!</p>
-        <p class="text-4xl self-end">This is me.</p>
+        <p class="text-8xl text-sky-400">this is me.</p>
+        <p class="text-4xl font-elise self-end">hajimemashite!</p>
     </div>
     <!--Projects-->
-    <div id="projects" class="grid mt-4 p-4 "><h1 class="text-9xl font-six-caps text-sky-500">Projects</h1></div>
+    <div id="projects" class="grid mt-4 p-4 ">
+        <div>
+            <h1 class="text-9xl font-six-caps text-sky-400">What I've</h1>
+            <p class="text-6xl font-elise">worked</p>
+            <h1 class="text-9xl font-six-caps text-sky-400"> on.</h1>
+        </div>
+    </div>
     <!--Contact-->
-    <div id="contact" class="grid mt-4 p-4 "><h1 class="text-9xl font-six-caps text-sky-500">Contact</h1></div>
+    <div id="contact" class="grid mt-4 p-4 ">
+        <div class="sm:flex grid grid-cols-[auto,1fr] gap-x-2">
+            <h1 class="text-9xl font-six-caps text-sky-400">How to</h1>
+            <p class="text-4xl">reach</p>
+            <h1 class="text-9xl font-elise text-sky-400">me.</h1>
+        </div>
+    </div>
     <!--Footer-->
     <footer class="grid place-content-center mt-4 p-4 ">Copyright © 2022 Levell Mack. All rights reserved.</footer>
 </div>
