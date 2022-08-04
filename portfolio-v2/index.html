@@ -57,24 +57,24 @@
         </div>
     </nav>
     <!--Home-->
-    <div id="home" x-data="{shown: false}" x-intersect="shown = true" class="grid w-full items-center p-4 pt-40">
-        <div class="grid">
-            <div class="md:flex w-fit grid gap-x-2 text-9xl text-sky-400 leading-none font-six-caps ">
+    <div id="home" class="grid w-full items-center p-4 pt-40">
+        <div x-data="{shown: false}" x-intersect="shown = true" class="grid">
+            <div class="md:flex w-fit grid gap-x-2 text-[10rem] text-sky-400 leading-none font-six-caps ">
                 <h1 x-show="shown" x-transition.duration.500ms.delay.300ms>Front-End</h1>
-                <div x-show="shown" x-transition.duration.500ms.delay.400ms class="text-white text-7xl font-elise self-end">web</div>
+                <div x-show="shown" x-transition.duration.500ms.delay.400ms class="text-white text-8xl font-elise self-end">web</div>
                 <h1>Developer</h1>
             </div>
-            <h2 x-show="shown" x-transition.duration.500ms.delay.500ms class="text-2xl tracking-custom">watching my code come to life fuels my passion for front-end development.</h2>
+            <h2 x-show="shown" x-transition.duration.500ms.delay.500ms class="text-3xl tracking-custom">watching my code come to life fuels my passion for front-end development.</h2>
         </div>
-        <div class="grid pt-16 justify-end">
+        <div x-data="{shown: false}" x-intersect.half="shown = true" class="grid pt-16 justify-end">
             <div class="grid grid-cols-[auto,1fr]">
-                <div class="sm:flex grid grid-cols-[auto,1fr] text-right justify-self-end gap-x-4 w-fit ">
-                    <div x-show="shown" x-transition.duration.500ms.delay.300ms class="text-9xl font-six-caps">I am</div>
-                    <p class="text-9xl font-six-caps text-sky-400 self-end">Levell</p>
-                    <div class="text-9xl font-six-caps col-start-2">Mack</div>
+                <div class="sm:flex grid grid-cols-[auto,1fr] text-right justify-self-end gap-x-4 w-fit text-[10rem] leading-none">
+                    <div x-show="shown" x-transition.duration.500ms.delay.300ms class="font-six-caps">I am</div>
+                    <p class="font-six-caps text-sky-400 self-end">Levell</p>
+                    <div class="font-six-caps col-start-2">Mack</div>
                 </div>
                 <div x-show="shown" x-transition.duration.500ms.delay.700ms class="text-2xl font-elise text-sky-400">hello!</div>
-                <div x-show="shown" x-transition.duration.500ms.delay.400ms class="text-2xl text-right">i am a front-end developer. based in california.</div>
+                <div x-show="shown" x-transition.duration.500ms.delay.400ms class="text-[1.82rem] text-right">i am a front-end developer. based in california.</div>
             </div>
         </div>
     </div>
