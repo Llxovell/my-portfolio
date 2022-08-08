@@ -59,7 +59,7 @@
     <!--Home-->
     <div id="home" class="grid gap-16 w-full p-4">
         <div x-data="{shown: false}" x-intersect="shown = true" class="grid self-end">
-            <div class=" w-fit grid gap-x-2 text-[10rem] md:text-[15rem] xl:text-[18rem] leading-none font-six-caps ">
+            <div class=" w-fit grid gap-x-2 text-[10rem] md:text-[15rem] xl:text-[15rem] leading-none font-six-caps ">
                 <div x-show="shown" x-transition.duration.500ms.delay.400ms class="text-green-200 text-5xl font-elise self-end">web</div>
                 <h1 x-show="shown" x-transition.duration.500ms.delay.300ms class="">Front-End</h1>
                 <h1 class="">Developer</h1>
@@ -77,7 +77,7 @@
                 <div x-show="shown" x-transition.duration.500ms.delay.400ms class="text-5xl text-right text-zinc-500">i am a front-end developer. based in california.</div>
             </div>
         </div>
-        <div x-data="{shown: false}" x-intersect.half="shown=true" class="grid w-[85%] sm:w-[65%] text-2xl pl-16">
+        <div x-data="{shown: false}" x-intersect.half="shown=true" class="grid w-[85%] sm:w-[65%] lg:text-2xl text-xl lg:pl-16 pl-4">
             <p x-show="shown" x-transition.duration.500ms.delay.900ms >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet reiciendis quae adipisci cumque doloremque consequatur odio. Iure vel dicta reiciendis, voluptas sit iste enim adipisci, quo nemo, molestiae quisquam voluptatibus!</p>
         </div>
     </div>
@@ -85,8 +85,15 @@
     <div id="about" x-data="{shown: false}" x-intersect.half="shown = true" class="grid min-h-[128px] gap-4 mt-4 p-4">
         <p x-show="shown" x-transition.duration.500ms class="text-8xl text-sky-200">this is me.</p>
         <p x-show="shown" x-transition.duration.500ms.delay.300ms class="text-4xl text-zinc-500 font-elise self-end">hajimemashite!</p>
-        <div x-data="{shown: false}" x-intersect.half="shown=true" class="grid w-[85%] sm:w-[65%] text-2xl justify-self-end text-right pr-16">
-            <p x-show="shown" x-transition.duration.500ms.delay.500ms >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet reiciendis quae adipisci cumque doloremque consequatur odio. Iure vel dicta reiciendis, voluptas sit iste enim adipisci, quo nemo, molestiae quisquam voluptatibus!</p>
+        <div x-data="{shown: false}" x-intersect.half="shown = true" class="grid pl-32">
+            <img x-show="shown" x-transition.duration.500ms.delay.300ms src="./assets/levell.jpg" alt="levell" class="object-cover grayscale object-bottom w-[200px] h-[200px]">
+        </div>
+        <div x-data="{shown: false}" x-intersect.half="shown=true" class="grid w-[80%] lg:text-2xl text-xl lg:pl-16 pl-4">
+            <p x-show="shown" x-transition.duration.500ms.delay.500ms >Hello! My name is Levell. I'm a front-end developer currently located in
+                Southern California. I create websites and web based applications
+                primarily in HTML, CSS, Javascript and React. I studied computer science at California State University, San
+                Bernardino where I recieved my B.S. in Computer Science in 2021. I am always searching for opportunities that will allow me to develop and
+                grow further in frontend development.</p>
         </div>
     </div>
     <!--Projects-->
@@ -96,16 +103,9 @@
             <p x-show="shown" x-transition.duration.500ms.delay.300ms class="text-6xl text-zinc-500 font-elise">worked</p>
             <h1 x-show="shown" x-transition.duration.500ms.delay.500ms class="text-9xl font-six-caps text-sky-200"> on.</h1>
         </div>
-        <!--
-        <div x-data="{shown: false}" x-intersect.half="shown=true" class="grid w-[85%] sm:w-[65%] text-2xl pl-16">
-            <p x-show="shown" x-transition.duration.500ms.delay.700ms >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet reiciendis quae adipisci cumque doloremque consequatur odio. Iure vel dicta reiciendis, voluptas sit iste enim adipisci, quo nemo, molestiae quisquam voluptatibus!</p>
-        </div-->
-        <div class="grid">
-            <div x-data="{shown: false}" x-intersect="shown = true" class="grid grid-cols-[1fr,auto] relative">
-                <div x-data="{shown: false}" x-intersect.half="shown=true" class="grid text-2xl justify-self-end text-right pr-16">
-                    <p x-show="shown" x-transition.duration.500ms.delay.500ms >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet reiciendis quae adipisci cumque doloremque consequatur odio. Iure vel dicta reiciendis, voluptas sit iste enim adipisci, quo nemo, molestiae quisquam voluptatibus!</p>
-                </div>
-                <img x-show="shown" x-transition src="./assets/mgsite.png" alt="melissa guzman website" class="object-cover object-top w-64 h-64 mr-16" />
+        <div>
+            <div x-data="{shown: false}" x-intersect.half="shown = true" class="grid pl-32">
+                <img x-show="shown" x-transition.duration.500ms.delay.300ms src="./assets/mgsite.png" alt="melissa guzman" class="object-cover grayscale object-top w-[200px] h-[200px]">
             </div>
         </div>
     </div>
