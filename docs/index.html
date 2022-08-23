@@ -1,0 +1,106 @@
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Levell Mack</title>
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100;400&family=Elsie+Swash+Caps:wght@400;900&family=Six+Caps&display=swap" rel="stylesheet">
+    <!--Alpine.js-->
+    <script defer src="https://unpkg.com/@alpinejs/intersect@3.x.x/dist/cdn.min.js"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <!--Tailwind CSS-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              fontFamily: {
+                'elise': ['Elsie Swash Caps', 'cursive'],
+                'antonio': ['Antonio', 'sans-serif'],
+                'six-caps': ['Six Caps', 'sans-serif']
+              },
+              letterSpacing: {
+                  'custom': '.01em'
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body class="grid lg:justify-center w-full font-antonio font-light subpixel-antialiased bg-zinc-900 text-white">
+    <!--Page Wrapper-->
+    <div class="grid gap-y-16 w-full lg:w-[1000px] relative">
+    <!--Navbar-->
+    <nav x-data="{shown: false}" x-intersect="shown = true" class="w-full">
+        <div x-show="shown" 
+            x-transition:enter="transition-all ease-out duration-500 delay-[500ms]" 
+            x-transition:enter-start="-translate-y-24 opacity-0" 
+            x-transition:enter-end="translate-y-0 opacity-100" 
+            class="p-4 pr-0 w-full lg:w-[1000px] grid grid-cols-2 items-center backdrop-blur-sm fixed left-0 right-0 mr-auto ml-auto border-b-[1px]">
+        <!--Brand-->
+        <div class="cursor-pointer text-3xl font-normal leading-[1.5rem]">
+            <div class="w-24 hover:text-sky-400 transition-colors duration-300">
+                <a href="#">levell 
+                    <span class="text-sky-400">mack</span>.
+                </a>
+            </div>
+        </div>
+        <!--Nav Links-->
+        <ul class="flex grid-cols-4 justify-self-end text-xl sm:text-2xl font-antonio">
+            <li class=""><a href="#about" class="hover:text-sky-400 transition-colors duration-300 sm:px-4 px-2 py-2">about</a></li>
+            <li class=""><a href="#projects" class="hover:text-sky-400 transition-colors duration-300 sm:px-4 px-2 py-2">projects</a></li>
+            <li class=""><a href="#contact" class="hover:text-sky-400 transition-colors duration-300 px-4 py-2">contact</a></li>
+        </ul>
+        </div>
+    </nav>
+    <!--Home-->
+    <div id="home" class="grid w-full items-center p-4 pt-40">
+        <div x-data="{shown: false}" x-intersect="shown = true" class="grid">
+            <div class="md:flex w-fit grid gap-x-2 text-[10rem] text-sky-400 leading-none font-six-caps ">
+                <h1 x-show="shown" x-transition.duration.500ms.delay.300ms>Front-End</h1>
+                <div x-show="shown" x-transition.duration.500ms.delay.400ms class="text-white text-8xl font-elise self-end">web</div>
+                <h1>Developer</h1>
+            </div>
+            <h2 x-show="shown" x-transition.duration.500ms.delay.500ms class="text-3xl tracking-custom">watching my code come to life fuels my passion for front-end development.</h2>
+        </div>
+        <div x-data="{shown: false}" x-intersect.half="shown = true" class="grid pt-16 justify-end">
+            <div class="grid grid-cols-[auto,1fr]">
+                <div class="sm:flex grid grid-cols-[auto,1fr] text-right justify-self-end gap-x-4 w-fit text-[10rem] leading-none">
+                    <div x-show="shown" x-transition.duration.500ms.delay.300ms class="font-six-caps">I am</div>
+                    <p class="font-six-caps text-sky-400 self-end">Levell</p>
+                    <div class="font-six-caps col-start-2">Mack</div>
+                </div>
+                <div x-show="shown" x-transition.duration.500ms.delay.700ms class="text-2xl font-elise text-sky-400">hello!</div>
+                <div x-show="shown" x-transition.duration.500ms.delay.400ms class="text-[1.82rem] text-right">i am a front-end developer. based in california.</div>
+            </div>
+        </div>
+    </div>
+    <!--About-->
+    <div id="about" x-data="{shown: false}" x-intersect.half="shown = true" class="sm:flex min-h-[128px] gap-x-4 mt-4 p-4">
+        <p x-show="shown" x-transition.duration.500ms class="text-8xl text-sky-400">this is me.</p>
+        <p x-show="shown" x-transition.duration.500ms.delay.300ms class="text-4xl font-elise self-end">hajimemashite!</p>
+    </div>
+    <!--Projects-->
+    <div id="projects" x-data="{shown: false}" x-intersect.half="shown = true" class="grid mt-4 p-4 ">
+        <div>
+            <h1 x-show="shown" x-transition.duration.500ms class="text-9xl font-six-caps text-sky-400">What I've</h1>
+            <p x-show="shown" x-transition.duration.500ms.delay.300ms class="text-6xl font-elise">worked</p>
+            <h1 x-show="shown" x-transition.duration.500ms.delay.500ms class="text-9xl font-six-caps text-sky-400"> on.</h1>
+        </div>
+    </div>
+    <!--Contact-->
+    <div id="contact" x-data="{shown: false}" x-intersect.half="shown = true" class="grid mt-4 p-4 ">
+        <div class="sm:flex grid grid-cols-[auto,1fr] gap-x-2">
+            <h1 x-show="shown" x-transition.duration.500ms class="text-9xl font-six-caps text-sky-400">How to</h1>
+            <p x-show="shown" x-transition.duration.500ms.delay.300ms class="text-4xl">reach</p>
+            <h1 x-show="shown" x-transition.duration.500ms.delay.500ms class="text-9xl font-elise text-sky-400">me.</h1>
+        </div>
+    </div>
+    <!--Footer-->
+    <footer class="grid place-content-center mt-4 p-4 ">Copyright © 2022 Levell Mack. All rights reserved.</footer>
+</div>
+</body>
+</html>
